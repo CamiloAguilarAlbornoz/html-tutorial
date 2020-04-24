@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="en">
+        <title>Form</title>
+    </head>
+    <body>
+        <header>
+            <nav><h1>Registration Form</h1></nav>
+        </header>
+        <form enctype="multipart/form-data" method="POST">
+            <p>
+                <label for="name">
+                    <strong>First Name:</strong>
+                </label>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label for="lastName">
+                    <strong>Last Name:</strong>
+                </label>
+                <input type="text" name="lastName">
+            </p>
+            <p>
+                <label for="Email-Addres">
+                    <strong>Email Addres:</strong>
+                </label>
+                <input type="email" name="Email-Addres">
+            </p>
+            <p>
+                <label for="Date-of-birth">
+                    <strong>Date of Birth:</strong>
+                </label>
+                <input type="date">
+            </p>
+            <p>
+                <label for="Gender">
+                    <strong>Gender:</strong>
+                </label>
+                <select name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </p>
+            <p>
+                <label for="Socioeconomic-status">
+                    <strong>Socioeconomic Status:</strong>
+                </label>
+                <div name="Socioeconomic-status">
+                    <label for="High">High</label>
+                    <input type="radio" name="High" value="Hight">
+                    <label for="High-Average">High Average</label>
+                    <input type="radio" name="High-Average" value="High-Average">
+                    <label for="Average">Average</label>
+                    <input type="radio" name="Average" value="Average">
+                    <label for="Low-Average">Low Average</label>
+                    <input type="radio" name="Low-Average" value="Low-Average">
+                    <label for="Low-High">Low High</label>
+                    <input type="radio" name="Low-High" value="Low-High">
+                    <label for="Low-Low">Low Low</label>
+                    <input type="radio" name="Low-Low" value="Low-Low">
+                </div>
+            </p>
+            <p>
+                <label for="Hobbies">
+                    <strong>Hobbies:</strong>
+                </label>
+                <div name="Hobbies">
+                    <label for="guitar">Play Guitar</label>
+                    <input type="checkbox" name="guitar" value="Play-Guitar">
+                    <label for="series">Watch TV Guitar</label>
+                    <input type="checkbox" name="series" value="Watch-TV-Guitar">
+                    <label for="pizza">Eat Pizza</label>
+                    <input type="checkbox" name="pizza" value="Eat-Pizza">
+                </div>
+            </p>
+            <p>
+                <label for="IMG">
+                    <strong>IMG:</strong>
+                </label>
+                <input type="file" name="IMG" accept=".pdf,.jpg,.png">
+            </p>
+        </form>
+    </body>
+</html>
