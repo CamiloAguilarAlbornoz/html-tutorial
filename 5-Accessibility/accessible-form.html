@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <main>
+            <form action="POST">
+                <fieldset>
+                    <legend>
+                        <strong>Please enter your contact details</strong>
+                    </legend>
+                    <label for="name">
+                        <strong>Your Name (required):</strong>
+                        <input type="text" name="name" required/>
+                    </label>
+                    <br/>
+                    <label for="email">
+                        <strong>E-Mail Address (required):</strong>
+                        <input type="email" name="email" required>
+                    </label>
+                    <br/>
+                    <label for="phone">
+                        <strong>Phone number (+57): (optional):</strong>
+                        <input type="text" name="phone">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <strong>Please select the courses that you are interested in (required)</strong>
+                    </legend>
+                    <label for="web-developer">
+                        <input type="checkbox" value="Web Developer" name="web-developer" required>
+                        <strong>Web Developer</strong>
+                    </label>
+                    <br/>
+                    <label for="react-developer">
+                        <input type="checkbox" value="React Developer" name="react-developer" required>
+                        <strong>React Developer</strong>
+                    </label>
+                    <br/>
+                    <label for="fullstack-developer">
+                        <input type="checkbox" value="Fullstack Developer" name="fullstack-developer" required>
+                        <strong>Fullstack Developer</strong>
+                    </label>
+                    <label for="other">
+                        <input type="checkbox" value="Other" name="Other" required>
+                        <strong>Other</strong>
+                    </label>
+                </fieldset>
+                <label for="message">
+                    <strong>Please enter a message (optional):</strong>
+                    <br/>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label>
+                <br/>
+                <button>Send message</button>
+                <button>Reset form</button>
+            </form>
+        </main>
+    </body>
+</html>
